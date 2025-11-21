@@ -2,7 +2,7 @@
 
 set -e
 
-GITHUB_RAW_URL="https://raw.githubusercontent.com/weblerson/amigurumi/main"
+GITHUB_RAW_URL="https://raw.githubusercontent.com/weblerson/amigurumi/master"
 WAYBAR_DIR="$HOME/waybar"
 WALLPAPER_DIR="$HOME/Images"
 HYPRPAPER_DIR="$HOME/.config/hypr"

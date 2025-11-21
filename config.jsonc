@@ -1,0 +1,55 @@
+{
+  "width": 40,
+  "spacing": 4,
+  "position": "left",
+  "modules-left": [
+    "custom/clock-label",
+    "clock#time",
+    "clock#date"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "battery",
+    "network"  
+  ],
+  "hyprland/workspaces": {
+    "format": "<sub>{icon}</sub>\n{windows}\n",
+    "format-window-separator": "\n"
+  },
+  "clock#time": {
+    "format": "{:%H\n%M}",
+    "tooltip": false
+  },
+  "clock#date": {
+    "format": "{:%b\n%d\n%y}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/clock-label": {
+    "format": "TS",
+    "tooltip-format": false
+  },
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "",
+    "format-disconnected": "⌔",
+    "tooltip-format": "{ifname} via {gwaddr} with strength {signalStrength}%"
+  },
+  "battery": {
+     "states": {
+       // "good": 95,
+       "warning": 30,
+       "critical": 15
+     },
+     "format": "{icon}",
+     "format-full": "{icon}",
+     "format-charging": "",
+     "format-plugged": "",
+     "format-alt": "{time} {icon}",
+     // "format-good": "", // An empty format will hide the module
+     // "format-full": "",
+     "format-icons": ["", "", "", "", ""],
+     "tooltip-format": "{capacity}%"
+  }
+}

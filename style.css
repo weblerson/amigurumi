@@ -34,6 +34,22 @@ window#waybar {
 
 #workspaces button {
   color: #ffffff;
+  background-color: #000000;
+  border-radius: 50%;
+  padding: 5px 5px;
+  min-height: 10px;
+  min-width: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#workspaces button.active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#workspaces button:hover {
+  color: #000000;
 }
 
 #network,
@@ -41,3 +57,26 @@ window#waybar {
   padding: 0px 5px 5px 0px;
 }
 
+#keyboard-state-num,
+#keyboard-state-caps {
+    background-color: transparent;
+    padding: 5px 0px;
+}
+
+#keyboard-state-num label,
+#keyboard-state-caps label {
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#keyboard-state-num label.locked {
+   background-color: #40a02b; /* Green */
+    color: #000000; 
+}
+
+#keyboard-state-caps label.locked {
+    background-color: #d20f39; /* Red */
+    color: #ffffff;
+}
